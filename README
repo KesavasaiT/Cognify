@@ -1,0 +1,1 @@
+Cognify is a full-stack ML application that predicts the type of brain tumor. Cognify is powered by a Tensorflow Convolutional Neural Network (CNN) and is integrated to the front-end via a Flask API.
