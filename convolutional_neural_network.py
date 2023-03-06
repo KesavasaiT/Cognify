@@ -63,10 +63,10 @@ generator_test = ImageDataGenerator(rescale=1./255,
 
 
 
-train = generator_train.flow_from_directory('/Users/Ramesh/Downloads/dataset/Training', target_size=(64,64),
+train = generator_train.flow_from_directory('/directory of train datasets', target_size=(64,64),
                                               batch_size=32, class_mode= "categorical", color_mode='grayscale')
 
-test = generator_test.flow_from_directory('/Users/Ramesh/Downloads/dataset/Testing', target_size=(64,64),
+test = generator_test.flow_from_directory('/directory of test datasets', target_size=(64,64),
                                               batch_size=32, class_mode= "categorical", color_mode='grayscale')
 
 model1_es = EarlyStopping(monitor = 'loss', min_delta = 1e-11, patience = 12, verbose = 1) # Stop training when a monitored metric has stopped improving.
